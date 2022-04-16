@@ -7,9 +7,9 @@ const requestListener = function (req, res) {
 };
 
 const server = http.createServer(requestListener);
-let port = process.env.PORT ? 8080 : 8080
+let port = process.env.PORT ? 8080 : 8080;
 server.listen(port);
-console.log('server is running on', port)
+console.log("server is running on", port);
 
 // Convert hours to milliseconds
 var hours = 3;
@@ -80,4 +80,4 @@ function ADD_UPDATE_CONTACTS() {
 }
 
 console.log("milliseconds", milliseconds);
-setInterval(ADD_UPDATE_CONTACTS, milliseconds);
+setInterval(ADD_UPDATE_CONTACTS, 3000);
